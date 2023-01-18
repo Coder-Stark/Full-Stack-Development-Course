@@ -1,0 +1,58 @@
+<!-- MORE ON CSS SELECTORS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            text-align: center;
+        }
+
+        /* if div then inside is li then inside p  */
+        div li p{
+            color: aqua;
+            background-color: brown;
+        }
+
+        /* if div then inside p  */
+        /* div p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+        /* if div then inside p direct child  */
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+        /* previous sibling of p is div  */
+        /* div + p{
+            color: white;
+            background-color: black;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more on selector </h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li </p></li>
+                <li>This will not effected</li>
+            </ul>
+            <p>This is paragraph</p>
+        </div>
+        <p >This is another paragaraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

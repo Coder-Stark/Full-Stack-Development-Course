@@ -1,0 +1,61 @@
+<!-- DOM(Document Object Model) NAVIGATION IN JAVASCRIPT -->
+<!-- GET ELEMENT FROM DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Navigation</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id = "nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More </li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        // get element by id 
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        // get element by class 
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+
+        // get element by  css selectors
+        let sel = document.querySelector('#nav');
+        console.log("Selctor returns " , sel);
+        let sel1 = document.querySelector('#nav>li');
+        console.log("Selctor returns " , sel1);
+        //all matching selectors return
+        let sel2 = document.querySelectorAll('#nav>li');
+        console.log("Selctor returns " , sel2);
+        let selector = document.querySelector('.container');
+        console.log("Selector returns " , selector);
+    </script>
+</body>
+</html>
+
+
+<!-- output
+
+div#main.container
+ul#nav
+
+HTMLCollection(2) [div#main.container, div.container, main: div#main.container]
+
+Selctor returns  ul#nav
+Selctor returns  li
+Selctor returns  NodeList(5) [li, li, li, li, li]
+Selector returns  div#main.container -->

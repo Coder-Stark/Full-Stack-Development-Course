@@ -1,0 +1,63 @@
+<!-- SETTIMEOUT  AND SETINTERVAL -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settime and SetIneterval</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        // setTimeout --> Allows us to run the function once after the  interval of time 
+        // setInterval --> Allows us to run the function repeatedly after the interval of time 
+        // clearTimeout --> Allows us to stop the running  function once after the interval of time 
+        // clearTimeout --> Allows us to stop the running  function repeatedly after the interval of time 
+        function greet(){
+            console.log("Hello Good Morning");
+        }
+        // greet();
+        // setTimeout(fun , time(ms) , arguments....)
+        setTimeout(greet , 5000);
+
+        function greet1(name , byetext){
+            console.log("Hello Good Morning" + name  + " " + byetext);
+        }
+        setTimeout(greet1 , 5000 , " Shivam " , "take care") 
+      
+        function greet2(name , byetext){
+            console.log("Hello Good Morning" + name  + " " + byetext);
+        }
+        timeOut = setTimeout(greet2 , 5000 , " Shivam " , "take care") 
+        console.log(timeOut);
+
+        clearTimeout(timeOut);
+
+        function greet3(name , byetext){
+            console.log("Hello Good Morning" + name  + " " + byetext);
+        }
+        intervalId = setInterval(greet3 , 5000 , " Aditya " , "take care") 
+        console.log(intervalId);
+
+        clearInterval(intervalId);
+
+        //To show time in site and also console
+        function displaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+        }
+        interval = setInterval(displaytime , 1000);
+
+        // if clear is not use then it makes infinite loop /infinite calls 
+        clearInterval(interval);
+    </script>
+</body>
+</html>

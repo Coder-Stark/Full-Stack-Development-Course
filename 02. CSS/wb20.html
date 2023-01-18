@@ -1,0 +1,60 @@
+<!-- BOX MODEL IN CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model in Css</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        .container{
+            background-color: aqua;
+            border: 3px solid red;
+
+            /* we can set padding for top , right , bottom , left  */
+            padding-top: 59px;
+            padding-right: 23px;
+            padding-bottom: 29px;
+            padding-left: 54px;
+
+            /* we can set margin for top , right , bottom , left  */
+            margin-top: 34px;
+            margin-right: 23px;
+            margin-bottom: 43px;
+            margin-left: 53px;
+
+            /* padding/margin = top right bottom left  */
+            padding: 23px 34px 65px 78px;
+
+            /* padding y(top/bottom) x(left/right) */
+            padding: 34px 54px;
+            margin: 14px 19px;
+            border-radius: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique facere, unde, minima natus aliquid nulla saepe magnam, ut deleniti aliquam harum dolores tempora deserunt sapiente vero cumque! In a totam optio.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is second heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique facere, unde, minima natus aliquid nulla saepe magnam, ut deleniti aliquam harum dolores tempora deserunt sapiente vero cumque! In a totam optio.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is third heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique facere, unde, minima natus aliquid nulla saepe magnam, ut deleniti aliquam harum dolores tempora deserunt sapiente vero cumque! In a totam optio.</p>
+    </div>
+</body>
+</html>

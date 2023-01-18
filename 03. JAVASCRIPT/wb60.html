@@ -1,0 +1,95 @@
+<!-- ARROW FUNCTIONS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow function tutorial
+    </div>
+    <script>
+        function greet(){
+            console.log("Good Morning");
+        }
+        greet();
+
+        // sortcut
+        let greet1 = ()=> {
+            console.log("Good Evening");
+        }
+        greet1();
+
+        //sortcut -> sortcut
+        let greet2 = ()=> console.log("Good night");
+        greet2();
+
+        // work without any function 
+        setTimeout(() => {
+            console.log("We are in settimeout");
+        }, 2000);
+
+
+        let sum = ( a , b )=> {
+            return a+b;
+        }
+        //sortcut
+        let sum1 = ( a , b) => a+b;
+
+        //for 1 argument no need of bracket
+        let half = a => a/2;
+
+        let obj = {
+            names: ["Shivam" , "Aditya" , "Tushar" , "Satyam"],
+            speak(){
+                this.names.forEach((student) => {
+                    console.log(" kukdoo koo " + student);
+                });
+            }
+        }
+        obj.speak();
+
+
+        //in obj1 this.greeting -->> this of outerscope(characterstic (=>))
+        // laxical this --> obj->fun_>this->>points to parent(this) not fun(this) 
+        let obj1 = {
+            greeting:"Good Morning ",
+            names: ["Shivam" , "Aditya" , "Tushar" , "Satyam"],
+            speak(){
+                this.names.forEach((student) => {
+                    console.log( this.greeting + "kukdoo koo " + student);
+                });
+            }
+        }
+        obj1.speak();
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- output
+
+Good Morning
+Good Evening
+Good night
+We are in settimeout
+sum(4 , 5)
+9
+sum1(4 , 9)
+13 
+half(5)
+2.5
+kukdoo koo Shivam
+kukdoo koo Aditya
+kukdoo koo Tushar
+kukdoo koo Satyam
+Good Morning kukdoo koo Shivam
+Good Morning kukdoo koo Aditya
+Good Morning kukdoo koo Tushar
+Good Morning kukdoo koo Satyam-->

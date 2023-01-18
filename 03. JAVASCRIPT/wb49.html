@@ -1,0 +1,49 @@
+<!-- JAVASCRIPT STRINGS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Strings</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim accusamus exercitationem omnis vel incidunt maxime eaque, dicta, eveniet facere odio? Dolorum, dicta quidem totam voluptatem non nobis beatae iusto placeat perspiciatis consectetur porro?</p>
+    </div>
+    <script>
+        // var string = 'this';
+        var string = "this";
+        var name = " shivam";
+        var channel = "codewithshivam"
+        var messege = " Shivam is a good boy";
+        console.log(string + name + messege);
+
+        var temp = `${name} is a nice person and he has a channel ${channel}`;
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`lenght of name is ${len}`);
+
+        console.log("hello world\n shivam");
+
+        var y = new String("This");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3>This is a h3 heading </h3>'
+
+    </script>
+</body>
+</html>
+
+<!-- output
+
+this shivam Shivam is a good boy
+ shivam is a nice person and he has a channel codewithshivam
+lenght of name is 7
+hello world
+ shivam
+String {'This'} -->

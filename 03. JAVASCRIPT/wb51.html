@@ -1,0 +1,83 @@
+<!-- JAVASCRIPT CONDITIONALS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript conditionals</title>
+</head>
+<body>
+    <!-- div>ul>li{item-$}*7 -->
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var str1 = "This is a string";
+        var str1 = "This is a string2";
+        console.log(str1);
+
+        let a = 'u';{
+            let a = 'x';
+            console.log(a);
+        }
+        console.log(a);
+
+        const  b = "this cannot be changed";
+        console.log(b);
+        
+        let age = 5;
+        if(age>18){
+            console.log("you can drink coldrink");
+        }
+        else if(age == 2){
+            console.log("Age is 2");
+        }
+        else if(age == 5){
+            console.log("Age is 5");
+        }
+        else{
+            console.log("you can drink water");
+        }
+
+        const cups = 8;
+        switch (cups) {
+            case 4:
+                console.log("This value of cups is 4")
+                break;
+            case 5:
+                console.log("This value of cups is 5")
+                break;
+            case 6:
+                console.log("This value of cups is 6")
+                break;
+            case 7:
+                console.log("This value of cups is 7")
+                break;
+        
+            default:
+                console.log("The value of cups is none of 4 , 5 , 6 , 7")
+                break;
+        }
+
+    </script>
+</body>
+</html>
+
+<!-- output
+
+This is a string2
+wb51.html:31 x
+wb51.html:33 u
+wb51.html:36 this cannot be changed
+wb51.html:46 Age is 5
+wb51.html:68 The value of cups is none of 4 , 5 , 6 , 7 -->

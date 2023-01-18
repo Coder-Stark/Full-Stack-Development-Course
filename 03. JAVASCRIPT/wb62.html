@@ -1,0 +1,45 @@
+<!-- PARSING JSON -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parsing Json</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        let jsonobj = {
+            name : "Shivam" , 
+            channel:"cws" , 
+            age: 21 , 
+            friend:"Aditya"
+        }
+        console.log(jsonobj);
+
+        //stringify -->> object to string
+        let myjsonstr = JSON.stringify(jsonobj);
+        console.log(myjsonstr);
+        //change in string
+        myjsonstr = myjsonstr.replace("Shivam" , "Aditya");
+        console.log(myjsonstr);
+
+        //Parsing-->> string to object
+        let newjsonobj = JSON.parse(myjsonstr);
+        console.log(newjsonobj);
+
+    </script>
+</body>
+</html> 
+
+<!-- output
+
+
+  {name: 'Shivam', channel: 'cws', age: 21, friend: 'Aditya'}
+{"name":"Shivam","channel":"cws","age":21,"friend":"Aditya"}
+{"name":"Aditya","channel":"cws","age":21,"friend":"Aditya"}
+  {name: 'Aditya', channel: 'cws', age: 21, friend: 'Aditya'} -->

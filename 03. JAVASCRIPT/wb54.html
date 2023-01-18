@@ -1,0 +1,43 @@
+<!-- INTRACTING WITH USERS -->
+<!-- INTRACTION USING ALERT , CONFIRM AND PROMPT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacting With User</title>
+</head>
+<body>
+    <div class="conatianer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla atque officiis iste ut fuga saepe voluptas libero natus. Quam, iure temporibus voluptatibus quod voluptatem aperiam ducimus reiciendis totam eos beatae amet omnis doloremque.</p>
+    </div>
+    <SCript>
+        //Alert in in-browser JavaScript -->does not retrun anything
+        // alert("This is a alert messege");
+
+        //prompt
+        // let name = prompt("What is your name ?" ,"guest");
+        // console.log(name);
+
+        //confirm
+        let delpost = confirm("Do you really want to delete post ? ");
+        if(delpost){
+            //code to delete the post
+            console.log("Your post is deleted successfully ");
+        }
+        else{
+            //code to cancel deletion of the post
+            console.log("Your post is not been deleted ");
+        }
+        console.log(delpost);
+
+    </SCript>
+</body>
+</html>
+
+<!-- output
+
+Your post is not been deleted 
+false -->

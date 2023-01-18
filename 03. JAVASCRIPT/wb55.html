@@ -1,0 +1,100 @@
+<!-- LOOPS IN JAVASCRIPT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        This is all about Loops
+    </div>
+    <script>
+        console.log("This is for loop");
+        let i = 0;
+        for(i = 0; i < 7; i++){
+            console.log(i);
+        }
+
+        let arr = ["Rohan" , "Shivam" , "Rajan" , "Aditya" , "Satyam"];
+        for(i = 0 ; i< arr.length ; i++){
+            // console.log(arr[i]);
+            console.log("Hello friend , "+ arr[i]);
+        }
+
+        // same as above(first method)
+        arr.forEach(function f(element){
+            console.log("Hello Friend , "+ element + " to modern javascript");
+        })
+
+        //same as above (second method)
+        for(element of arr){
+            console.log("Hello Friend , "+ element + " to modern javascript again ");
+
+        }
+
+        //for loop for objects
+        let employee = {
+            name: "Shivam kumar",
+            salaray:2 , 
+            channel:"cwshivam"
+        }
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        //while loop in js
+        let j = 0;
+        while(j<5){
+            console.log(`${j} is less then 5 `);
+            j++;
+        }
+
+        //do while loop in js
+        let k = 34;
+        do{
+            console.log(`${k} is less then 5 and we are inside do while loop `);
+            k++;
+        }while(k<5);
+    </script>
+</body>
+</html>
+
+
+<!-- output
+
+This is for loop
+0
+1
+2
+3
+4
+5
+6
+Hello friend , Rohan
+Hello friend , Shivam
+Hello friend , Rajan
+Hello friend , Aditya
+Hello friend , Satyam
+Hello Friend , Rohan to modern javascript
+Hello Friend , Shivam to modern javascript
+Hello Friend , Rajan to modern javascript
+Hello Friend , Aditya to modern javascript
+Hello Friend , Satyam to modern javascript
+Hello Friend , Rohan to modern javascript again 
+Hello Friend , Shivam to modern javascript again 
+Hello Friend , Rajan to modern javascript again 
+Hello Friend , Aditya to modern javascript again 
+Hello Friend , Satyam to modern javascript again 
+The name of employee is Shivam kumar
+The salaray of employee is 2
+The channel of employee is cwshivam
+0 is less then 5 
+1 is less then 5 
+2 is less then 5 
+3 is less then 5 
+4 is less then 5 
+34 is less then 5 and we are inside do while loop -->

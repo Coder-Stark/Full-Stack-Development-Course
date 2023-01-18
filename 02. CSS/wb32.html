@@ -1,0 +1,66 @@
+<!-- Nth CHILD PSEUDO SELECTORS  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selector</title>
+    <style>
+        .container{
+            display: block;
+            width: 222px;
+            margin: auto;
+        }
+        input[type = 'text']{
+            padding: 22px;
+            border: 2px solid rebeccapurple;
+        }
+        a[target]{
+            font-size: 44px;
+            color: aqua;
+        }
+        a[target = '_self']{
+            font-size: 22px;
+            color: brown;
+        }
+        input[type = 'email']{
+            color: yellow;
+            border: 4px solid gray;
+        }
+        li:nth-child(3){
+            color: cyan;
+        }
+        li:nth-child(2n+0){
+            color: red;
+        }
+        li:nth-child(odd){
+            background-color: bisque;
+        }
+        li:nth-child(even){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" placeholder="Submit">
+        </form>
+        <ul>
+            <!-- li.item#item$*5 -->
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+        </ul>
+    </div>
+</body>
+</html>

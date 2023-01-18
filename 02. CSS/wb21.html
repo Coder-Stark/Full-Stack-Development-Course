@@ -1,0 +1,70 @@
+<!-- FLOATS AND CLEAR / ALIGNMENT  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            background-color: aliceblue;
+            margin: 30px auto;
+        }
+        .item{
+            border:3px solid gray;
+            margin: 12px 20px;        
+            padding: 12px 20px;
+            background-color: aqua;
+        }
+        #fruits{
+            float: left;
+            width:48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            /* clear: left;
+            clear: right; */
+            clear: both;
+            width: 100%;
+        }
+        p,h3{
+            /* text-align: right;
+            text-align: left; */
+            text-align: center;
+        }
+        h1{
+            margin: 23px auto;
+            width: 455px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero id veritatis iste cum quasi, odio recusandae eligendi nostrum praesentium dolore. Sunt vitae accusantium odit doloremque. Praesentium tempora veritatis rerum. Ducimus.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero id veritatis iste cum quasi, odio recusandae eligendi nostrum praesentium dolore. Sunt vitae accusantium odit doloremque. Praesentium tempora veritatis rerum. Ducimus.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero id veritatis iste cum quasi, odio recusandae eligendi nostrum praesentium dolore. Sunt vitae accusantium odit doloremque. Praesentium tempora veritatis rerum. Ducimus.</p>
+        </div>
+    </div>
+</body>
+</html>

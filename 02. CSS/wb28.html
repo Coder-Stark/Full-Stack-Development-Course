@@ -1,0 +1,92 @@
+<!-- FLEXBOX -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 555px;
+            width: 100%;
+            
+            /* initialize the container as flex box  */
+            display: flex;
+
+            /* flex properties of flex container  */
+            /* flex-direction: row;              default value of flex-direction: is row ; */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* to wrap up boxes  */
+            /* flex-wrap: wrap; */        /* default value of flex-wrap is  no wrap
+            /* flex-wrap: wrap-reverse; */
+
+            /*SHORTCUT-->> flex-direction and also flex-wrap in 1 statement */
+            /* flex-flow: row wrap; */
+
+            /* justify the content in horizontal direction  */
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+            /*justify the content in vertical direction*/
+            align-items: center;
+            align-items: flex-end; 
+            align-items: flex-start;
+            align-items: stretch;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            background-color: green;
+            margin: 2px;
+            padding: 2px;
+
+        }
+        #item1{
+            /* flex properties for flex item  */
+            /* higher the order , later it shown up in the container  */
+            /* order: 2;
+            
+            flex-grow: 2;
+            flex-shrink: 4; */
+
+            /* when flex-direction is set to row flex basis-->> control width  */
+            /* when flex-direction is set to coloumn flex basis-->> control height  */
+            flex-basis: 130px;
+        }
+        #item2{
+
+            order: 3;
+            flex-shrink: 4; 
+        }
+        #item3{
+            /* flex: grow , shrink , basis; */
+            /* flex: 2 2 160px; */
+
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+        <!-- .item#item$*6 -->
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div> -->
+</body>
+</html>

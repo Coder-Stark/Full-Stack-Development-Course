@@ -1,0 +1,61 @@
+<!-- ARRAYS AND OBJECTS IN JAVASCRIPT  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vitae modi unde magni iure atque, molestiae fuga, recusandae, sint excepturi laudantium iste officia ducimus delectus sed minus tempore molestias odit quas corporis eum magnam?</p>
+    <script>
+        let var1 = 34;
+        let var2 = "string";
+        let var3 = true;
+        let var4 = null;
+        let var5 = undefined;
+
+        let employee = {
+            name : "Shivam",
+            age : 21 , 
+            salary: 2000,
+            comapany:"mango",
+        }
+        console.log(employee);
+        // in console ->> 
+        // employee.name; ->> 'shivam'
+
+        let names = [2 ,"shivam" , 3 , true , undefined];
+        console.log(names);
+        console.log(names[0]);
+        
+        let names2 = new Array(2 ,"shivam" , 3 ,true , undefined);
+        console.log(names2);
+        console.log(names2.length);
+
+        names = names.sort();
+        console.log(names);
+
+        names.push("this is pushed");
+        console.log(names);
+
+        let age = new Array(23);
+        // let age = new Array(23 , 45);
+        console.log(age);
+    </script>
+
+</html>
+
+<!-- output
+
+{name: 'Shivam', age: 21, salary: 2000, comapany: 'mango'}
+[2, 'shivam', 3, true, undefined]
+2
+[2, 'shivam', 3, true, undefined]
+5
+[2, 3, 'shivam', true, undefined]
+[2, 3, 'shivam', true, undefined, 'this is pushed']
+[empty × 23]
+//[23, 45] -->

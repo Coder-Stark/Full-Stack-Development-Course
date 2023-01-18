@@ -1,0 +1,84 @@
+<!-- JAVASCRIPT STRING FUNCTIONS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consequatur odio enim sequi! Aliquam voluptas, numquam exercitationem molestias quibusdam adipisci quod! Eligendi, doloribus, sequi dolor explicabo aperiam minima alias nam illo odio veritatis pariatur.</p>
+    </div>
+    <script>
+        var str = "This is a String";
+        console.log(str);
+
+        // first occurance of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // last occurance of a substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        //substring froma a string
+        var substr = str.slice(1,6);
+        console.log(substr);
+        //cant take negative value
+        var substr1 = str.substring(1,6);
+        console.log(substr1);
+        //index = start , no. of index
+        var substr2 = str.substr(1,6);
+        console.log(substr2);
+
+        //replacement of word 
+        var replaced = str.replace('string' , 'shivam');
+        console.log(str);
+        console.log(replaced);
+
+        //conversions --> upper or lower
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //joint two string like (+)
+        var newstring = str.concat(' New String');
+        console.log(newstring);
+
+        //remove first and last white spaces
+        var strwspace = "    This contains     whitespaces      ";
+        console.log(strwspace);
+        console.log(strwspace.trim());
+
+        //give character and code no.
+        var char2 = str.charAt(2);
+        console.log(char2);
+        var char2 = str.charCodeAt(2);
+        console.log(char2);
+
+        console.log(str[2]);
+    </script>
+</body>
+</html>
+
+<!-- output
+
+This is a String
+2
+5
+his i
+his i
+his is
+This is a String
+This is a String
+THIS IS A STRING
+this is a string
+This is a String New String
+    This contains     whitespaces      
+wb50.html:54 This contains     whitespaces
+i
+105
+i -->

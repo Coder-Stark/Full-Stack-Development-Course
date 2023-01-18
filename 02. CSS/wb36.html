@@ -1,0 +1,89 @@
+<!-- KEYFRAMES AND ANIMATIONS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: yellow;
+        }
+        .box{
+            border: 2px solid red;
+            background-color: blue;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: Aditya; */
+            /* animation-name: Shivam; */
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            /* animation-fill-mode: forwards; */
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 3s; */
+            animation-direction: reverse;
+
+            /* This properties can be set using this shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: harry 5s ease-in 1s 12 backwards ;
+        }
+        @keyframes Aditya{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            } 
+            75%{
+                top: 250px; 
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+        @keyframes Shivam{
+            from{
+                width: 250px;
+                /* height: 250px; */
+            }
+            to{
+                width: 500px;
+                /* height: 500px; */
+            }
+        }
+        @keyframes harry{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            } 
+            75%{
+                top: 250px; 
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

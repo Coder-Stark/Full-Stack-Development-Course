@@ -1,0 +1,77 @@
+<!-- EVENTS IN JAVASCRIPT -->
+<!-- Browser Events
+click
+contextmenu
+mouseover/mouseout
+mousedown/mouseup
+mousemove
+
+submit
+focus
+
+DOMContentLoaded
+
+transitioned -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn{
+            padding: 10px 20px;
+            border: 2px solid black;
+            background-color: silver;
+            color: red;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo atque unde debitis ut hic cupiditate culpa labore, Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quia aut reiciendis ut iusto necessitatibus soluta sapiente at, ipsam iste magni officia aliquam, enim porro odit fugit mollitia? Velit, labore mollitia. Nemo, aut esse. provident laboriosam, repellendus eum soluta ipsam et eligendi! Animi quis esse sapiente debitis nihil nesciunt harum!</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            // alert('Mouse Inside');
+            console.log('Mouse Inside');
+        });
+        para.addEventListener('mouseout',function run(){
+            // alert('Mouse now went outside');
+            console.log('Mouse now went outside');
+        });
+        function togglehide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else{
+                para.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- output
+
+WITH NO. OF CLICKS
+
+Mouse Inside
+Mouse now went outside
+Mouse Inside
+Mouse now went outside
+Mouse Inside
+Mouse now went outside
+Mouse Inside
+Mouse now went outside -->

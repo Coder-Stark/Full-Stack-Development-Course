@@ -1,0 +1,82 @@
+<!-- DATE OBJECT  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: aquamarine;
+            padding: 34px;
+            margin: 12px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is a date and time tutorial");
+        let dt = new Date();
+        console.log(dt);
+
+        let dt1 = new Date(0);   //refrence time
+        console.log(dt1);
+
+        let dt2 = new Date("2022-12-14");
+        console.log(dt2);
+
+        // let newdate = new Date(year , month-1 , date , hours , minutes , seconds)
+        let dt3 = new Date(2022 , 8 , 20 , 11 , 30 , 30 );
+        console.log (dt3);
+
+        let yr = dt3.getFullYear();
+        console.log(yr);
+
+        let date= dt3.getDate();
+        console.log(date);
+
+        let mnt = dt3.getMonth();
+        console.log(mnt);
+
+        let hr = dt3.getHours();
+        console.log(hr);
+
+        let min = dt3.getMinutes();
+        console.log(min);
+
+        let sec = dt3.getSeconds();
+        console.log(sec);
+
+        let dy = dt3.getDay();
+        console.log(dy);
+
+        dt3.setDate(3);
+        console.log(dt3);
+
+        dt3.setMinutes(54);
+        console.log(dt3);
+
+        now = Date.now();
+        console.log(now);
+
+
+        //to show exact time on site not in console
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+        setInterval(updateTime , 1000);
+
+    </script>
+</body>
+</html>

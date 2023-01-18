@@ -1,0 +1,59 @@
+<!-- CSS BOX AND TEXT SHADOWS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadows</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            border: 2px solid green;
+            margin: 23px 12px;
+            padding: 23px;
+            background-color: bisque;
+
+            /* box-shadow: offset-x offset-y color; */
+            box-shadow: 12px 12px rebeccapurple ;                   
+            box-shadow: -12px -12px rebeccapurple ;
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            box-shadow: 12px 12px 12px red;                           
+            box-shadow: -12px -12px 12px red;
+
+            /* box-shadow: offset-x offset-y blur-radius  spread radius color; */
+            box-shadow: 12px 12px 12px 12px violet;   
+            
+            box-shadow: rgba(34,45,45,0.3);
+
+            box-shadow: inset 5px 5px yellow;
+            box-shadow: 3px 5px red , 10px 18px blue;
+        }
+        .card h2{
+            text-shadow: 2px 2px purple;
+            text-shadow: 2px 2px 2px purple;
+            text-shadow: -2px -2px -2px purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is c++ course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, ullam alias aperiam minima fugit officiis debitis id ducimus error iure a amet mollitia dolore, recusandae illum officia! Laudantium ut odit saepe nihil magnam molestias.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is html course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur blanditiis omnis beatae repellat, ipsum neque fuga in autem sed labore quasi perferendis. Porro dolore minima voluptas cumque. Dolorem voluptatem et mollitia in eligendi.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aperiam consequuntur modi quibusdam itaque facilis quod nobis id placeat beatae eligendi, nostrum, qui quasi suscipit dolores atque explicabo ratione. Ipsum.</p>
+        </div>
+    </div>
+</body>
+</html>
